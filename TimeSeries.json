@@ -1,0 +1,185 @@
+{
+  //註釋元數據
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  //儀表板是否可編輯
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  //0 表示沒有共享十字準線或工具提示（默認），1 表示共享十字準線，2 表示共享十字準線和共享工具提示
+  "graphTooltip": 0,
+  //儀表板的唯一數字標識符
+  "id": 18,
+  "links": [],
+  "liveNow": false,
+  //面板陣列
+  "panels": [
+    {
+      //datasource type and uid
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PBFA97CFB590B2093"
+      },
+      //配置設定
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "dash": [
+                0,
+                10
+              ],
+              "fill": "dot"
+            },
+            "lineWidth": 2,
+            "pointSize": 2,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      //網格坐標中的面板大小和位置
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "hidden",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "asc"
+        }
+      },
+      //一個panels中
+      //有多少個query 就有多少個targets
+      "targets": [
+        {
+          //datasource type and uid
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "editorMode": "code",
+          //query
+          "expr": "go_memstats_alloc_bytes_total{job=\"prometheus\"}",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          //datasource type and uid
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "editorMode": "code",
+          //query
+          "expr": "go_info{job=\"prometheus\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "B"
+        }
+      ],
+      //panel title
+      "title": "TimeSeries",
+      //panel 背景是否要背景色
+      "transparent": true,
+      //圖表樣式
+      "type": "timeseries"
+    }
+  ],
+  //JSON 模式的版本
+  "schemaVersion": 36,
+  //dashboard style -> dark or light
+  "style": "dark",
+  //Tag
+  "tags": [],
+  //模板元數據
+  "templating": {
+    "list": []
+  },
+  //儀錶盤的時間範圍，即最近 6 小時、最近 7 天等
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  //timepicker 元數據
+  "timepicker": {},
+  //儀表板的時區，即utc或browser
+  "timezone": "",
+  //Dashboard Title
+  "title": "12324",
+  //Dashboard uid
+  "uid": "wP692oRVz",
+  //Dashboard 版本
+  "version": 8,
+  "weekStart": ""
+}
