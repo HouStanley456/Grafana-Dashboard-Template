@@ -1,5 +1,6 @@
 {
   //註釋元數據
+  //系統自動生成
   "annotations": {
     "list": [
       {
@@ -160,7 +161,7 @@
   "schemaVersion": 36,
   //dashboard style -> dark or light
   "style": "dark",
-  //Tag
+  //Tags
   "tags": [],
   //模板元數據
   "templating": {
@@ -176,7 +177,7 @@
   //儀表板的時區，即utc或browser
   "timezone": "",
   //Dashboard Title
-  "title": "12324",
+  "title": "TimeSeries",
   //Dashboard uid
   "uid": "wP692oRVz",
   //Dashboard 版本
