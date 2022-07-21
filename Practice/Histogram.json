@@ -1,0 +1,152 @@
+{
+  //註釋元數據
+  //系統自動生成
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  //儀表板是否可編輯
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  //0 表示沒有共享十字準線或工具提示（默認），1 表示共享十字準線，2 表示共享十字準線和共享工具提示
+  "graphTooltip": 0,
+   //儀表板的唯一數字標識符
+  "id": 22,
+  "links": [],
+  "liveNow": false,
+  //面板陣列
+  "panels": [
+    {
+      //datasource type and uid
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PBFA97CFB590B2093"
+      },
+      //註記
+      "description": "類似長條圖",
+      //配置設定
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            //透明度
+            "fillOpacity": 55,
+            //漸變模式
+            //gradientMode -> none, opacity, Hue, Scheme 
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      //網格坐標中的面板大小和位置
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "bucketOffset": 0,
+        "combine": false,
+        "legend": {
+          "calcs": [],
+          //displayMode -> List, Table, Hidden
+          "displayMode": "list",
+          //Legend位置 -> Bottom, Right
+          "placement": "bottom"
+        }
+      },
+      //套件版本
+      "pluginVersion": "9.0.2",
+      //一個panels中
+      //有多少個query 就有多少個targets
+      "targets": [
+        {
+          //datasource type and uid
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "editorMode": "builder",
+          //query
+          "expr": "go_goroutines",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      //Panel Title
+      "title": "Histogram",
+      //Panel 背景是否透明
+      "transparent": true,
+      //圖表樣式
+      "type": "histogram"
+    }
+  ],
+  //Json模式的版本
+  "schemaVersion": 36,
+  "style": "dark",
+  //Tags
+  "tags": [],
+  //模板元數據
+  "templating": {
+    "list": []
+  },
+  //儀錶盤的時間範圍，即最近 6 小時、最近 7 天等
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  //timepicker 元數據
+  "timepicker": {},
+  //儀表板的時區，即utc或browser
+  "timezone": "",
+  //Dashboard Title
+  "title": "Histogram",
+  //Dashboard uid
+  "uid": "YcvdgbgVz",
+  //Dashboard 版本
+  "version": 1,
+  "weekStart": ""
+}
